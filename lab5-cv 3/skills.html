@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Falak Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-header { background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #4c1d95 100%); }
+        .gradient-btn { background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%); }
+        .card-shadow { box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.15); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Bar -->
+    <header class="gradient-header text-white sticky top-0 z-50 border-b border-white/10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-400/30 flex items-center justify-center font-extrabold text-xl text-purple-300">F</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-wide">FALAK</span>
+                    <span class="text-[10px] text-purple-300 tracking-wider font-medium">BSCS PORTFOLIO</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="skills.html" class="text-purple-300 font-semibold">Skills</a>
+                <a href="projects.html" class="hover:text-purple-300 transition-colors">Projects</a>
+                <a href="contact.html" class="hover:text-purple-300 transition-colors">Contact</a>
+            </nav>
+            <div>
+                <a href="contact.html" class="gradient-btn text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-md hover:opacity-90 transition">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section Content -->
+    <section class="max-w-7xl mx-auto px-6 py-16 my-auto">
+        <div class="text-center space-y-3 mb-12">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Technical & Professional Skills</h1>
+            <p class="text-slate-500 text-sm">Technologies, tools, and interpersonal strengths I bring to the table</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Programming Languages -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Programming Languages</h3>
+                <p class="text-slate-600 text-sm">C++, Java, Python</p>
+            </div>
+
+            <!-- Web Development -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Web Development</h3>
+                <p class="text-slate-600 text-sm">HTML5, CSS3, JavaScript, Tailwind CSS</p>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Digital Marketing</h3>
+                <p class="text-slate-600 text-sm">SEO, Content Strategy, Social Media & Growth</p>
+            </div>
+
+            <!-- Communication & Soft Skills -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Communication</h3>
+                <p class="text-slate-600 text-sm">Public Speaking, Technical Writing & Presentation</p>
+            </div>
+
+            <!-- Leadership & Management -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300 sm:col-span-2 lg:col-span-1">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Leadership & Teamwork</h3>
+                <p class="text-slate-600 text-sm">Team Management, Task Delegation & Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-header text-white text-center py-6 border-t border-white/10 text-sm">
+        <p class="text-slate-300">&copy; 2026 Falak Imran. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
