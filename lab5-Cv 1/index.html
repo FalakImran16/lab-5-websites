@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falak | BSCS Portfolio & CV</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brandPurple: '#7C3AED',
+                        brandDark: '#0F172A',
+                        brandBg: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-header {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #4c1d95 100%);
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Top Navigation Bar -->
+    <header class="gradient-header text-white sticky top-0 z-50 border-b border-white/10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-400/30 flex items-center justify-center font-extrabold text-xl text-purple-300 group-hover:scale-105 transition">
+                    F
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-wide">FALAK</span>
+                    <span class="text-[10px] text-purple-300 tracking-wider font-medium">BSCS PORTFOLIO</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                <a href="#about" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="#skills" class="hover:text-purple-300 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-purple-300 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-purple-300 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Social Links & Action -->
+            <div class="flex items-center space-x-4">
+                <a href="https://github.com/FalakImran16" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition text-sm" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/falak-imran-0192783b4/" target="_blank" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition text-sm" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#contact" class="hidden sm:inline-block gradient-btn text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-md hover:opacity-90 transition">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="md:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-100 text-purple-700 text-xs font-semibold border border-purple-200">
+                <span class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></span>
+                BSCS 5th Semester Student
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+                Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600">Falak</span>
+            </h1>
+
+            <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
+                A passionate Computer Science student exploring software engineering, algorithms, and building clean web applications.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+                <a href="#contact" class="gradient-btn text-white font-medium px-7 py-3.5 rounded-xl shadow-lg hover:shadow-purple-500/25 transition transform hover:-translate-y-0.5">
+                    Get in Touch
+                </a>
+                <a href="#projects" class="bg-white border border-slate-200 text-slate-700 font-medium px-7 py-3.5 rounded-xl shadow-sm hover:bg-slate-50 transition">
+                    View Projects
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Photo Card -->
+        <div class="md:col-span-5 flex justify-center">
+            <div class="relative w-full max-w-sm">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-3xl blur-lg opacity-30"></div>
+                <div class="relative bg-white p-3 rounded-2xl border border-slate-200 card-shadow">
+                    <img src="falak.jpg" alt="Falak Profile" class="w-full h-80 sm:h-96 object-cover rounded-xl shadow-inner">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20 border-y border-slate-200/60">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-4">
+            <h2 class="text-3xl font-extrabold text-slate-900">About Me</h2>
+            <div class="w-12 h-1 bg-purple-600 mx-auto rounded-full"></div>
+            <p class="text-slate-600 text-lg leading-relaxed pt-4 max-w-3xl mx-auto">
+                I am currently in my 5th semester pursuing a Bachelor of Science in Computer Science (BSCS) in Lahore, Pakistan. I love writing code, understanding how software systems work, and constantly expanding my technical skill set through practical projects and leadership roles.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="text-center space-y-3 mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900">Technical & Professional Skills</h2>
+            <p class="text-slate-500 text-sm">Technologies, tools, and interpersonal strengths I bring to the table</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Programming Languages -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Programming Languages</h3>
+                <p class="text-slate-600 text-sm">C++, Java, Python</p>
+            </div>
+
+            <!-- Web Development -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Web Development</h3>
+                <p class="text-slate-600 text-sm">HTML5, CSS3, JavaScript, Tailwind CSS</p>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Digital Marketing</h3>
+                <p class="text-slate-600 text-sm">SEO, Content Strategy, Social Media & Growth</p>
+            </div>
+
+            <!-- Communication & Soft Skills -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Communication</h3>
+                <p class="text-slate-600 text-sm">Public Speaking, Technical Writing & Presentation</p>
+            </div>
+
+            <!-- Leadership & Management -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200/80 card-shadow hover:-translate-y-1 transition duration-300 sm:col-span-2 lg:col-span-1">
+                <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl mb-4">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg mb-2">Leadership & Teamwork</h3>
+                <p class="text-slate-600 text-sm">Team Management, Task Delegation & Problem Solving</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-white py-20 border-t border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center space-y-3 mb-12">
+                <h2 class="text-3xl font-extrabold text-slate-900">Featured Projects</h2>
+                <p class="text-slate-500 text-sm">Academic and software engineering projects</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-purple-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded-full">Java / OOP</span>
+                            <a href="https://github.com/FalakImran16" target="_blank" class="text-slate-400 hover:text-slate-700 text-lg"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Library Management System</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            A robust system developed in Java to efficiently manage book inventories, student member records, borrowing transactions, and due dates.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">Java</span>
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">OOP</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-purple-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-indigo-600 bg-indigo-100 px-3 py-1 rounded-full">Python / AI</span>
+                            <a href="https://github.com/FalakImran16" target="_blank" class="text-slate-400 hover:text-slate-700 text-lg"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Movie Recommendation System</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            An intelligent recommendation tool built using Python that suggests movies based on user preferences and content-filtering algorithms.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">Python</span>
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">Algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-purple-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-pink-600 bg-pink-100 px-3 py-1 rounded-full">OS / Systems</span>
+                            <a href="https://github.com/FalakImran16" target="_blank" class="text-slate-400 hover:text-slate-700 text-lg"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Interprocess Communication</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            A concurrent programming project implemented in Python to demonstrate safe data exchange, synchronization, and communication between multiple processes.
+                        </p>
+                    </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">Python</span>
+                        <span class="text-xs font-semibold bg-white border border-slate-200 text-slate-600 px-3 py-1 rounded-md">Concurrency</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Get In Touch</h2>
+        <p class="text-slate-600 mb-8 max-w-md mx-auto">Feel free to reach out for student collaborations, projects, or discussions.</p>
+        
+        <!-- Contact Info Cards -->
+        <div class="grid sm:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-purple-600 text-xl mb-2"><i class="fas fa-envelope"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Email</h3>
+                <a href="mailto:falakimran196@gmail.com" class="text-purple-600 text-xs hover:underline">falakimran196@gmail.com</a>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-purple-600 text-xl mb-2"><i class="fas fa-phone-alt"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Phone / WhatsApp</h3>
+                <a href="tel:03174880110" class="text-slate-600 text-xs">0317-4880110</a>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                <div class="text-purple-600 text-xl mb-2"><i class="fas fa-map-marker-alt"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Location</h3>
+                <p class="text-slate-600 text-xs">Lahore, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-4 flex-wrap">
+            <a href="mailto:falakimran196@gmail.com" class="gradient-btn text-white px-8 py-3.5 rounded-xl font-medium shadow-lg hover:opacity-90 transition">
+                <i class="far fa-envelope mr-2"></i> Send Email
+            </a>
+            <a href="https://github.com/FalakImran16" target="_blank" class="bg-white border border-slate-200 px-6 py-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition">
+                <i class="fab fa-github mr-2"></i> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/falak-imran-0192783b4/" target="_blank" class="bg-white border border-slate-200 px-6 py-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition">
+                <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-header text-white text-center py-6 border-t border-white/10 text-sm">
+        <p class="text-slate-300">&copy; 2026 Falak Imran. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
