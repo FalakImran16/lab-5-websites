@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Falak Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-header { background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #4c1d95 100%); }
+        .gradient-btn { background: linear-gradient(135deg, #7C3AED 0%, #6366F1 100%); }
+        .card-shadow { box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.15); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Top Navigation Bar -->
+    <header class="gradient-header text-white sticky top-0 z-50 border-b border-white/10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-400/30 flex items-center justify-center font-extrabold text-xl text-purple-300">F</div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-wide">FALAK</span>
+                    <span class="text-[10px] text-purple-300 tracking-wider font-medium">BSCS PORTFOLIO</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                <a href="index.html" class="hover:text-purple-300 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-purple-300 transition-colors">About</a>
+                <a href="skills.html" class="hover:text-purple-300 transition-colors">Skills</a>
+                <a href="projects.html" class="hover:text-purple-300 transition-colors">Projects</a>
+                <a href="contact.html" class="text-purple-300 font-semibold">Contact</a>
+            </nav>
+            <div>
+                <a href="contact.html" class="gradient-btn text-white text-xs font-semibold px-4 py-2.5 rounded-lg shadow-md hover:opacity-90 transition">Hire Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section Content -->
+    <section class="max-w-4xl mx-auto px-6 py-20 my-auto text-center">
+        <h1 class="text-3xl font-extrabold text-slate-900 mb-4">Get In Touch</h1>
+        <p class="text-slate-600 mb-10 max-w-md mx-auto">Feel free to reach out for student collaborations, projects, or discussions.</p>
+        
+        <!-- Contact Info Cards -->
+        <div class="grid sm:grid-cols-3 gap-6 mb-10">
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
+                <div class="text-purple-600 text-2xl mb-3"><i class="fas fa-envelope"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Email</h3>
+                <a href="mailto:falakimran196@gmail.com" class="text-purple-600 text-xs hover:underline break-all">falakimran196@gmail.com</a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
+                <div class="text-purple-600 text-2xl mb-3"><i class="fas fa-phone-alt"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Phone / WhatsApp</h3>
+                <a href="tel:03174880110" class="text-slate-600 text-xs hover:underline">0317-4880110</a>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 card-shadow">
+                <div class="text-purple-600 text-2xl mb-3"><i class="fas fa-map-marker-alt"></i></div>
+                <h3 class="font-bold text-slate-800 text-sm mb-1">Location</h3>
+                <p class="text-slate-600 text-xs">Lahore, Pakistan</p>
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-4 flex-wrap">
+            <a href="mailto:falakimran196@gmail.com" class="gradient-btn text-white px-8 py-3.5 rounded-xl font-medium shadow-lg hover:opacity-90 transition">
+                <i class="far fa-envelope mr-2"></i> Send Email
+            </a>
+            <a href="https://github.com/FalakImran16" target="_blank" class="bg-white border border-slate-200 px-6 py-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition card-shadow">
+                <i class="fab fa-github mr-2"></i> GitHub Profile
+            </a>
+            <a href="https://www.linkedin.com/in/falak-imran-0192783b4/" target="_blank" class="bg-white border border-slate-200 px-6 py-3.5 rounded-xl font-medium text-slate-700 hover:bg-slate-50 transition card-shadow">
+                <i class="fab fa-linkedin-in mr-2"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-header text-white text-center py-6 border-t border-white/10 text-sm">
+        <p class="text-slate-300">&copy; 2026 Falak Imran. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
